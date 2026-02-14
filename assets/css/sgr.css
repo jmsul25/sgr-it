@@ -1,0 +1,118 @@
+:root{
+  --sidebar-w: 260px;
+}
+
+body{
+  background:#f4f6f9;
+}
+
+/* Topbar */
+.sgr-topbar{
+  background:#0b2239;
+  color:#fff;
+}
+
+/* Layout */
+.sgr-layout{
+  display:flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sgr-sidebar{
+  width: var(--sidebar-w);
+  background:#1f2d3d;
+  color:#c2c7d0;
+  flex: 0 0 var(--sidebar-w);
+}
+
+.sgr-brand{
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  color:#fff;
+  font-weight:700;
+}
+
+.sgr-nav a{
+  color:#c2c7d0;
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  gap:.6rem;
+  padding: .65rem 1.25rem;
+  border-left: 3px solid transparent;
+}
+
+.sgr-nav a:hover{
+  background: rgba(255,255,255,.06);
+  color:#fff;
+}
+
+.sgr-nav a.active{
+  background: rgba(255,255,255,.08);
+  color:#fff;
+  border-left-color:#3c8dbc;
+}
+
+.sgr-content{
+  flex: 1 1 auto;
+}
+
+/* Cards / Tables */
+.card{
+  border: 0;
+  border-radius: .9rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,.06);
+}
+
+.table thead th{
+  font-weight:600;
+}
+
+.badge-soft{
+  background: rgba(60,141,188,.12);
+  color:#1f2d3d;
+  border: 1px solid rgba(60,141,188,.25);
+}
+
+/* Stat cards */
+.sgr-stat{
+  position: relative;
+  overflow: hidden;
+}
+
+.sgr-stat .sgr-stat-icon{
+  position:absolute;
+  right: 16px;
+  top: 14px;
+  font-size: 34px;
+  opacity: .18;
+}
+
+.sgr-stat .sgr-stat-label{
+  font-size: .8rem;
+  color: rgba(0,0,0,.55);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.sgr-stat .sgr-stat-value{
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+/* Forms */
+.form-control, .form-select{
+  border-radius: .6rem;
+}
+
+.btn{
+  border-radius: .6rem;
+}
+
+/* Responsive */
+@media (max-width: 992px){
+  .sgr-layout{ display:block; }
+  .sgr-sidebar{ width:100%; }
+}
