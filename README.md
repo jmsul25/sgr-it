@@ -1,5 +1,6 @@
 Empleado: lidia@sgr-it.local
 Admin: jmsierra@sgr-it.local
+pass : Cursos1
 SGR-IT
 
 Sistema de Gestión de Recursos IT
