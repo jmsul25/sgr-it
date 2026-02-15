@@ -1,3 +1,5 @@
+Empleado: lidia@sgr-it.local
+Admin: jmsierra@sgr-it.local
 SGR-IT
 
 Sistema de Gestión de Recursos IT
